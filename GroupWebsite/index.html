@@ -1,0 +1,154 @@
+<!-- Group Members : Halmareo Francis - 20002360
+                     Shaval Brown     - 2001407       --> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, inital-scale=1.0">
+      <title>Group Name - Mathema</title>
+        
+      <link rel="stylesheet" href="style1.css">
+      <script src="functions.js"></script>
+        
+    </head>
+    <body>
+      <nav class="header">
+          <h1 class= "textt" style="color:black; font-family: Orang; font-size:40px;">
+            Mathema
+          </h1>
+      </nav>
+        <br><br>
+        <div class="splash"> 
+            <div class='splashimg'> .  <br>. <br>. <br> . <br> . <br> .  <br>. <br>. <br> . <br> . <br>
+               </div>
+            <div class='splashtxt'>
+              <h2 class= "textt" style="color:black; font-family: Orang; font-size:40px;">
+                vae victis ~ woe to the conquered  <br>
+              </h2>
+              <h2 class= "textt" style="color:black; font-family: Orang; font-size:40px;">
+                Welcome To Methema
+              </h2>
+               </div>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div style="font-family: Shiny-Flakes" class= "content4" id="content">
+            <form id="formid" autocomplete="off" name="register" onsubmit="Register(event);"> 
+                <h3  style="font-family: Candy-Cane; font-size: 24px;"> &emsp; &emsp; &emsp; &emsp;Please Fill out the form below to get started:</h3>
+                &emsp; &emsp; &emsp; &emsp;<label for="firstname" style="font-size: 24px;" class="textt">First Name: <sup>*</sup></label><br>
+                &emsp; &emsp; &emsp; &emsp;<input autocomplete="off" type="text" id="firstname" minlength="4" size="50"><br>
+                &emsp; &emsp; &emsp; &emsp;<label id="spacef"></label><br>
+                &emsp; &emsp; &emsp; &emsp;<label for="lastname" style="font-size: 24px;" class="textt">Last Name: <sup>*</sup></label><br>
+                &emsp; &emsp; &emsp; &emsp;<input autocomplete="off" type="text" id="lastname" minlength="4"  size="50" ><br>
+                &emsp; &emsp; &emsp; &emsp;<label id="spacel"></label><br>
+                &emsp; &emsp; &emsp; &emsp;<label for="dob" style="font-size: 24px; " class="textt">Date Of Birth:  <sup>*</sup></label><br>
+                &emsp; &emsp; &emsp; &emsp;<input type="date" id="dob" style="width:67%"><br>
+                &emsp; &emsp; &emsp; &emsp;<label id="age"></label><br>
+                &emsp; &emsp; &emsp; &emsp;<label style="font-size: 24px;" class="textt">Gender:<sup>*</sup><br> </label>
+                &emsp; &emsp;&emsp;&emsp;<input name="gender" type="radio" id="F">
+                <label id="female" style="font-size: 24px;" class="textt">Female</label>
+               &emsp; &emsp; &emsp; &emsp; &emsp;<input name="gender" type="radio" id="M">
+                <label id="male" style="font-size: 24px;" class="textt">Male</label><br>
+                &emsp; &emsp; &emsp; &emsp;<label id="spaceg"></label><br>
+                &emsp; &emsp; &emsp; &emsp; <label for="email" style="font-size: 24px;" class="textt" >Email Address:  <sup>*</sup></label><br>
+                &emsp; &emsp; &emsp; &emsp; <input autocomplete="off" id="email" placeholder="...@gmail.com" pattern=".*@gmail.com$" title="must be gmail.com" type="email" size="50"><br>
+                &emsp; &emsp; &emsp; &emsp;<label id="space"></label><br><br>
+                &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;<button style="font-family:Shiny-Flakes; font-size: 24px;" type="submit" id="submit" onclick="">Register</button>
+             </form>
+        </div>
+        <div class="content6 hidden" id="content2">
+          <h1 class="textt" style="font-family:Shiny-Flakes; font-size: 34px; text-align:center">Let's Play Mathema</h1> 
+            <form id="formid2" name="play" method="post">
+                <!--Task 3-->
+                <br>&emsp; &emsp;&emsp; &emsp; &emsp;<button type="submit" id="start" onclick="playarea(); return false" style="font-family:Shiny-Flakes; font-size: 24px;">Start</button>
+                &emsp; &emsp;&emsp; &emsp; &emsp;<button type="submit" id="end" onclick="Endgame(); return false" style="font-family:Shiny-Flakes; font-size: 24px;">End</button>
+                <br> <br> 
+            </form> 
+        </div>
+        <div class="content7 hidden" id="content3"> 
+            <form name="play" id="form3"> 
+                <label id="playarea"></label><br><br>
+                &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp;<input autocomplete="off" type="number" placeholder="Enter answer here" id="answer">
+                <label id="val"></label><br>
+                <br><button type="submit" id="accept" onclick="CheckAnswer(); return false" style="font-family:Shiny-Flakes; font-size: 24px;">Accept</button>
+                <button type="submit" id="next" onclick="playgame(); return false" style="font-family:Shiny-Flakes; font-size: 24px;">Next</button>
+                <button type="submit" id="check" onclick="findPercentageScore(); return false" style="font-family:Shiny-Flakes; font-size: 24px;">Check Score</button>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </form>
+        </div>
+        <div class="content8 hidden" id="content4">
+            <form id ="form4">
+              <br><br><br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+                <textarea disabled style="width:600px;height:150px;" id="showpercentage"></textarea><br> 
+                <br><br>
+                <textarea disabled style="width:600px;height:150px;" id="showallplayers" rows="4" cols="65"></textarea>
+            </form> 
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="con"> 
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="gen">  
+          <h3>Gender</h3>
+            <table>
+              <tr>
+                <th id="male2" style="font-family:Shiny-Flakes; font-size: 24px;" class= "textt">Male</th>
+                <td> 
+                  <img src="Assets/blue.jpg" id="male_count" height="10" alt="Bar" width="1">
+                </td>
+              </tr>
+              <tr>
+                <th id="female2" style="font-family:Shiny-Flakes; font-size: 24px;" class= "textt">Female</th>
+                <td> 
+                  <img src="Assets/pink.jpg" id="female_count" height="10" alt="Bar" width="1">
+                </td>
+              </tr>
+            </table>  
+        </div>
+        <div class="perc">
+          <h3>Percentage Score</h3>
+        <table>
+          <tr>
+            <th id="under_50" class= "textt" style="font-size: 24px;">Less than 50</th>
+            <td> 
+              <img src="Assets/green.jpg" id="lessthan50" height="10" alt="Bar" width="1">
+            </td> 
+          </tr>
+          <tr>
+            <th id="50-59" class= "textt" style="font-size: 24px;">50-59</th>
+            <td> 
+              <img src="Assets/orange.png" id="between50n59" height="10" alt="Bar" width="1">
+            </td>
+          </tr>
+          <tr>
+            <th id="60-69" class= "textt" style="font-size: 24px;">60-69</th>
+            <td> 
+              <img src="Assets/pink.jpg" id="between60n69" height="10" alt="Bar" width="1">
+            </td>
+          </tr>
+          <tr>
+            <th id="70-79" class= "textt" style="font-size: 24px;">70-79</th>
+            <td> 
+              <img src="Assets/yellow.jpg" id="between70n79" height="10" alt="Bar" width="1">
+            </td>
+          </tr>
+          <tr>
+            <th id="80-89" class= "textt " style="font-size: 24px;">80-89</th>
+            <td> 
+              <img src="Assets/purple.jpg" id="between80n89" height="10" alt="Bar" width="1"> 
+            </td> 
+          </tr>
+          <tr>
+            <th id="90-99" class= "textt" style="font-size: 24px;">90-99</th>
+            <td> 
+              <img src="Assets/blue.jpg" id="between90n99" height="10" alt="Bar" width="1">
+            </td>
+          </tr>
+          <tr>
+            <th id="100" class= "textt" style="font-size: 24px;">100</th>
+            <td> 
+              <img src="Assets/red.jpg" id="at100" height="10" alt="Bar" width="1">
+            </td>
+          </tr>
+        </table> <br><br><br><br><br><br><br>
+        </div> 
+      </div> 
+    </body>
+</html>
